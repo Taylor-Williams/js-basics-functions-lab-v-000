@@ -21,7 +21,6 @@ function calculatesFarePrice(feetTravelled){
       fare += 25
     case feetTravelled > 400:
       fare += Math.min(feetTravelled - 400, 1600) * 0.02
-    default:
-
   }
+  return fare;
 }
