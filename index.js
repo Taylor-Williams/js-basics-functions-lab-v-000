@@ -1,6 +1,6 @@
 // Code your solution in this file!
 function distanceFromHqInBlocks(blockNumber) {
-  return math.abs((42 - blockNumber));
+  return Math.abs((42 - blockNumber));
 }
 
 function distanceFromHqInFeet(blockNumber) {
@@ -8,7 +8,7 @@ function distanceFromHqInFeet(blockNumber) {
 }
 
 function distanceTravelledInFeet(startBlock, endBlock){
-  return math.abs((startBlock - endBlock)) * 264;
+  return Math.abs((startBlock - endBlock)) * 264;
 }
 
 function calculatesFarePrice(feetTravelled){
