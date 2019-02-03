@@ -15,8 +15,8 @@ function calculatesFarePrice(feetTravelled){
   let fare;
   switch (true) {
     case feetTravelled > 400:
-    
+
     default:
-      
+
   }
 }
