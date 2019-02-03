@@ -11,7 +11,8 @@ function distanceTravelledInFeet(startBlock, endBlock){
   return Math.abs(startBlock - endBlock) * 264;
 }
 
-function calculatesFarePrice(feetTravelled){
+function calculatesFarePrice(startBlock, endBlock){
+  let feetTravelled = distanceTravelledInFeet(startBlock, endBlock)
   let fare = 0;
   switch (true) {
     case feetTravelled > 2500:
