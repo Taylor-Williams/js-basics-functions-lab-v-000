@@ -8,14 +8,22 @@ function distanceFromHqInFeet(blockNumber) {
 }
 
 function distanceTravelledInFeet(startBlock, endBlock){
-  return Math.abs((startBlock - endBlock)) * 264;
+  return Math.abs(startBlock - endBlock) * 264;
 }
 
 function calculatesFarePrice(feetTravelled){
   let fare;
   switch (true) {
+    case feetTravelled > 2500:
+      fare = 'cannot travel that far'
+      break;
+    case feetTravelled > 2000:
+      fare += 25
+      break;
     case feetTravelled > 400:
-
+      fare += Math.min(feetTravelled - 400, 1600) * 0.02
+      break;
+      
     default:
 
   }
