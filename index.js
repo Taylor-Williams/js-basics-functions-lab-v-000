@@ -20,8 +20,10 @@ function calculatesFarePrice(startBlock, endBlock){
       break;
     case feetTravelled > 2000:
       fare = 25;
+      break;
     case feetTravelled > 400:
-      fare += Math.min(feetTravelled - 400, 1600) * 0.02;
+      fare = Math.min(feetTravelled - 400, 1600) * 0.02;
+      break;
   }
   return fare;
 }
