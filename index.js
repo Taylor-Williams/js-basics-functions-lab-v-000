@@ -12,7 +12,7 @@ function distanceTravelledInFeet(startBlock, endBlock){
 }
 
 function calculatesFarePrice(feetTravelled){
-  let fare;
+  let fare = 0;
   switch (true) {
     case feetTravelled > 2500:
       fare = 'cannot travel that far'
